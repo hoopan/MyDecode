@@ -1,0 +1,1 @@
+jarsigner -verbose -keystore /media/bruce/5CE0E25AE0E23A42/AndroidStudioProjects/telegram_android/TMessagesProj/config/release.keystore -signedjar /media/bruce/5CE0E25AE0E23A42/apk/xunidingweijingling/dist/signed.apk /media/bruce/5CE0E25AE0E23A42/apk/xunidingweijingling/dist/xunidingweijingling.apk potatodebug

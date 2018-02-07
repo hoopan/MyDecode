@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_p2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff515151" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="小提示" />
+    <TextView android:textSize="13.0dip" android:textColor="#ff515151" android:gravity="center" android:background="@drawable/shape_d4" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" android:text=" 如果定位出现真实位置，请切换到数据流量 " android:textIsSelectable="true" />
+</LinearLayout>

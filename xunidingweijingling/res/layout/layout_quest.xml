@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/holo_blue_dark" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <ImageView android:id="@id/quest_back" android:background="@mipmap/back" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff515151" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="常见问题" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="#ffdfdbdb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff515151" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="1.为什么有时候微信打不开？" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff515151" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="答：这是您的手机里安装了不正规的多开导致的，解决办法：1.卸载原版微信重装；2.卸载虚拟定位重装（VIP可以恢复）；3.卸载微信多开重装" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="#ffdfdbdb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff515151" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="2.为什么微信附近的人看不到我，或者打招呼没人回应？" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff515151" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="答：这是您的微信被限制了附近的人，出现的原因是您太过频繁的加人，或被其他用户举报，或者您的微信号是新号，即使您的是老号，也有可能因为记录不太良好，而被微信标记\n解决办法：尽量使用记录比较良好的老号登录，被限制的号先养一段时间号，保持正常的使用记录，不要去加人也不要发广告，一般一到两周会自然解封" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="#ffdfdbdb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff515151" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="3.我收藏的地址有什么用？" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff515151" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="答：您收藏的地址，可以快速帮您定位您喜欢前往的位置，您可以收藏任何地点，并可以根据喜好来命名您常去的位置" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="#ffdfdbdb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff515151" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="4.怎么编辑我的收藏？" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff515151" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="答：在收藏栏里左滑您要编辑的条目，即会弹出编辑按钮" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="#ffdfdbdb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff515151" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="5.怎么输入经纬度？" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff515151" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="答：请您输入标准的经纬度，经度0~360之间，纬度0~180之间，是有效经纬度" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="#ffdfdbdb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff515151" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="6.搜索功能要怎么用？" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff515151" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="答：您只需要在城市文本框输入您想要搜索的城市，在关键字文本框内输入您想要搜索的地标，例如：肯德基，酒店等，地图就会显示您想要搜索的地标，供您选择，如果您的关键字为空，地图则会显示您要搜索的城市行政区" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:background="#ffdfdbdb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff515151" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="7.探探为什么有时候还是真实的位置？" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff515151" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="答：探探的问题正在努力解决，下个版本会修复，请谅解" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

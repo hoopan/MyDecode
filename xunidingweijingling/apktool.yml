@@ -1,0 +1,32 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: xunidingweijingling.apk
+compressionType: false
+doNotCompress:
+- assets/OaceOaT8w5Xda6wa
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '15'
+  targetSdkVersion: '22'
+sharedLibrary: false
+unknownFiles:
+  tencent_stub: '0'
+  com/android/databinding/library/baseAdapters/com.android.databinding.library.baseAdapters-br.bin: '8'
+  com/android/databinding/library/baseAdapters/com.android.databinding.library.baseAdapters-layoutinfo.bin: '8'
+  com/android/databinding/library/baseAdapters/com.android.databinding.library.baseAdapters-setter_store.bin: '8'
+  com/baidu/pano/platform/res/indoor_in.png: '0'
+  com/baidu/panosdk/plugin/indoor/res/indoor_exit.png: '0'
+  com/baidu/panosdk/plugin/indoor/res/panophoto_def.9.png: '8'
+  com/mcxtzhang/commonadapter/com.mcxtzhang.commonadapter-br.bin: '8'
+  com/mcxtzhang/commonadapter/com.mcxtzhang.commonadapter-layoutinfo.bin: '8'
+  com/mcxtzhang/commonadapter/com.mcxtzhang.commonadapter-setter_store.bin: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.1
+versionInfo:
+  versionCode: '42'
+  versionName: 1.4.2

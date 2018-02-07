@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:id="@id/item_app_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:gravity="start|center" android:id="@id/item_app_name" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_weight="1.0" android:layout_marginStart="20.0dip" style="@style/TextAppearance.AppCompat.Body1" />
+            <TextView android:gravity="start|center" android:id="@id/item_location" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_weight="1.0" android:layout_marginStart="20.0dip" style="@style/TextAppearance.AppCompat.Caption" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

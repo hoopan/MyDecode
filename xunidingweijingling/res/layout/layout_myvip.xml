@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/holo_blue_dark" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <ImageView android:id="@id/myvip_back" android:background="@mipmap/back" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff515151" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的VIP" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#fff2e712" android:id="@id/tv_myvipUser" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="VIP用户" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_d2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/tv_notVip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="您还不是VIP" />
+        <LinearLayout android:gravity="center" android:id="@id/lin_isVip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textColor="@color/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您的VIP将于 " />
+            <TextView android:textColor="@color/holo_yellow_dark" android:id="@id/tv_daoqiTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            <TextView android:textColor="@color/colorAccent" android:id="@id/tv_tian" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 天之后到期" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/colorAccent" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="剩余" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/holo_yellow_dark" android:gravity="center" android:id="@id/tv_leastTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:text="0天" />
+    </LinearLayout>
+    <TextView android:textColor="@color/colorAccent" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="开通VIP，无限定位次数，全国任意地点任您选择，想定哪就定哪！" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/shape_d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textColor="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="新用户福利:如果您是首次开通VIP,即可享受新人福利" />
+            <TextView android:textColor="@color/colorAccent" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="开通一个月获赠  +10天" />
+            <TextView android:textColor="@color/colorAccent" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="开通三个月获赠  +30天" />
+            <TextView android:textColor="@color/colorAccent" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="开通六个月获赠  +60天" />
+            <TextView android:textColor="@color/colorAccent" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:text="开通包年获赠    +120天" />
+        </LinearLayout>
+        <RelativeLayout android:background="@drawable/shape_d3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="永久VIP限时开放" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_centerHorizontal="true">
+                <TextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/tv_yongjiuvip" android:background="@drawable/shape_d3" android:layout_width="80.0dip" android:layout_height="60.0dip" android:text="99元\n永久" />
+                <ImageView android:id="@id/iv_yongjiuvip" android:background="@mipmap/duigou" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="47.0dip" android:layout_marginTop="3.0dip" />
+            </FrameLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="您绝对值得拥有" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/lin_payItem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/tv_onevip" android:background="@drawable/shape_d" android:layout_width="80.0dip" android:layout_height="60.0dip" android:text="18元\n一个月" />
+                <ImageView android:id="@id/iv_onevip" android:background="@mipmap/duigou" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="47.0dip" android:layout_marginTop="3.0dip" />
+            </FrameLayout>
+            <LinearLayout android:layout_width="5.0dip" android:layout_height="wrap_content" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/tv_threevip" android:background="@drawable/shape_d" android:layout_width="80.0dip" android:layout_height="60.0dip" android:text="38元\n三个月" />
+                <ImageView android:id="@id/iv_threevip" android:background="@mipmap/duigou" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="47.0dip" android:layout_marginTop="3.0dip" />
+            </FrameLayout>
+            <LinearLayout android:layout_width="5.0dip" android:layout_height="wrap_content" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/tv_sixvip" android:background="@drawable/shape_d" android:layout_width="80.0dip" android:layout_height="60.0dip" android:text="58元\n六个月" />
+                <ImageView android:id="@id/iv_sixvip" android:background="@mipmap/duigou" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="47.0dip" android:layout_marginTop="3.0dip" />
+            </FrameLayout>
+            <LinearLayout android:layout_width="5.0dip" android:layout_height="wrap_content" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/tv_baovip" android:background="@drawable/shape_p" android:layout_width="80.0dip" android:layout_height="60.0dip" android:text="88元\n包年(超值)" />
+                <ImageView android:id="@id/iv_baovip" android:background="@mipmap/duigou" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="47.0dip" android:layout_marginTop="3.0dip" />
+            </FrameLayout>
+        </RadioGroup>
+    </LinearLayout>
+    <Button android:textColor="@color/colorAccent" android:id="@id/bt_kaitong" android:background="@drawable/shape_select3" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="我要开通（+新用户福利）" />
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/holo_blue_dark" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <ImageView android:id="@id/iv_goBack" android:background="@mipmap/back" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#fff2e712" android:id="@id/tv_govipUser" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="VIP" android:layout_toRightOf="@id/iv_goBack" android:layout_alignTop="@id/textView3" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff515151" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="前往" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff515151" android:id="@id/tv_createShortCut" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="创建快捷方式" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onCreateShortCutClick" />
+    </RelativeLayout>
+    <LinearLayout android:background="@color/desktopColorA" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.baidu.mapapi.map.MapView android:id="@id/go_map" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <TextView android:textColor="@color/color_white" android:gravity="center" android:id="@id/go_tv" android:background="@color/black_20_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="目标位置" />
+    <LinearLayout android:orientation="vertical" android:id="@id/Lin_pay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/tv_godaoqi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="您的免费使用次数已用完 ! 您目前可以定位到系统预留的位置，北京,上海,深圳，开通VIP即可获得无限制定位！" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/shape_d" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textColor="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="新用户福利:如果您是首次开通VIP,即可享受新人福利" />
+                <TextView android:textColor="@color/colorAccent" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="开通一个月获赠  +10天" />
+                <TextView android:textColor="@color/colorAccent" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="开通三个月获赠  +30天" />
+                <TextView android:textColor="@color/colorAccent" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="开通六个月获赠  +60天" />
+                <TextView android:textColor="@color/colorAccent" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:text="开通包年获赠    +120天" />
+            </LinearLayout>
+            <RelativeLayout android:background="@drawable/shape_d3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textColor="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="永久VIP限时开放" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_centerHorizontal="true">
+                    <TextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/tv_goyongjiuvip" android:background="@drawable/shape_d3" android:layout_width="80.0dip" android:layout_height="60.0dip" android:text="99元\n永久" />
+                    <ImageView android:id="@id/iv_goyongjiuvip" android:background="@mipmap/duigou" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="47.0dip" android:layout_marginTop="3.0dip" />
+                </FrameLayout>
+                <TextView android:textColor="@color/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="您绝对值得拥有" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <RadioGroup android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/tv_one" android:background="@drawable/shape_d" android:layout_width="80.0dip" android:layout_height="60.0dip" android:text="18元\n一个月" />
+                    <ImageView android:id="@id/iv_one" android:background="@mipmap/duigou" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="47.0dip" android:layout_marginTop="3.0dip" />
+                </FrameLayout>
+                <LinearLayout android:layout_width="5.0dip" android:layout_height="wrap_content" />
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/tv_three" android:background="@drawable/shape_d" android:layout_width="80.0dip" android:layout_height="60.0dip" android:text="38元\n三个月" />
+                    <ImageView android:id="@id/iv_three" android:background="@mipmap/duigou" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="47.0dip" android:layout_marginTop="3.0dip" />
+                </FrameLayout>
+                <LinearLayout android:layout_width="5.0dip" android:layout_height="wrap_content" />
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/tv_six" android:background="@drawable/shape_d" android:layout_width="80.0dip" android:layout_height="60.0dip" android:text="58元\n六个月" />
+                    <ImageView android:id="@id/iv_six" android:background="@mipmap/duigou" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="47.0dip" android:layout_marginTop="3.0dip" />
+                </FrameLayout>
+                <LinearLayout android:layout_width="5.0dip" android:layout_height="wrap_content" />
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/tv_bao" android:background="@drawable/shape_p" android:layout_width="80.0dip" android:layout_height="60.0dip" android:text="88元\n包年(超值)" />
+                    <ImageView android:id="@id/iv_bao" android:background="@mipmap/duigou" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="47.0dip" android:layout_marginTop="3.0dip" />
+                </FrameLayout>
+            </RadioGroup>
+        </LinearLayout>
+        <Button android:textColor="@color/colorAccent" android:id="@id/bt_gotoPay" android:background="@drawable/shape_select3" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="我要开通（+新用户福利）" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/lin_go" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:background="@drawable/shape_d3" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/colorAccent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="如果您不能正常打开分身应用，请点击重新检测" android:layout_weight="1.0" />
+            <Button android:textSize="13.0sp" android:textColor="@color/colorAccent" android:layout_gravity="center_vertical" android:id="@id/re_check" android:background="@drawable/shape_select3" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="重新检测" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/colorAccent" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="虚拟定位会请求打开微信,陌陌,企业微信,或钉钉，请在打开的登录界面里登陆您的微信,陌陌,企业微信,或钉钉。" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/lin_go_mmtt" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/bt_goWX" android:background="@drawable/shape_select3" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="定位到微信" android:layout_weight="1.0" />
+                    <Button android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/bt_goMM" android:background="@drawable/shape_select3" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="定位到陌陌" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/bt_goTT" android:background="@drawable/shape_select3" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="定位到企业微信" android:layout_weight="1.0" />
+                    <Button android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/bt_goDD" android:background="@drawable/shape_select3" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="定位到钉钉" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/bt_goQQ" android:background="@drawable/shape_select3" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="定位到QQ" android:layout_weight="1.0" />
+                    <Button android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/bt_goKS" android:background="@drawable/shape_select3" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="定位到快手" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:id="@id/lin_go_amation" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:background="@drawable/shape_p" android:layout_width="10.0dip" android:layout_height="30.0dip" />
+                <LinearLayout android:layout_width="5.0dip" android:layout_height="fill_parent" />
+                <ImageView android:background="@drawable/shape_p" android:layout_width="10.0dip" android:layout_height="30.0dip" />
+                <LinearLayout android:layout_width="5.0dip" android:layout_height="fill_parent" />
+                <ImageView android:background="@drawable/shape_p" android:layout_width="10.0dip" android:layout_height="30.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

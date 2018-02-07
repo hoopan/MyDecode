@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/holo_blue_dark" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:background="@mipmap/bianji" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="20.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编辑收藏" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:textColor="@color/colorPrimaryDark" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <EditText android:textSize="14.0sp" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@id/edit_bianji" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="asdasd" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@id/tv_quxiao" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="取消" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/colorPrimaryDark" android:gravity="center" android:id="@id/tv_save" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="保存" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

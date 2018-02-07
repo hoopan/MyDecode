@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/holo_blue_dark" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <ImageView android:id="@id/aboutus_back" android:background="@mipmap/back" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff515151" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关于我们" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="40.0dip" android:src="@mipmap/logo" />
+    <LinearLayout android:orientation="vertical" android:background="#ffdfdbdb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textColor="#ff515151" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/app_name" />
+        <TextView android:textColor="#ff515151" android:gravity="center" android:id="@id/tv_banben" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="版本" />
+    </LinearLayout>
+</LinearLayout>

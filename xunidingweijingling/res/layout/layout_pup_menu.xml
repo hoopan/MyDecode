@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/holo_blue_dark" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <ImageView android:id="@id/iv_pup_back" android:background="@mipmap/back" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff515151" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="创建快捷方式" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textColor="#ff515151" android:gravity="center_vertical" android:id="@id/tv_pup_wx" android:background="@drawable/shape_select_pup" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="微信" />
+        <LinearLayout android:background="#ffdfdbdb" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <TextView android:textColor="#ff515151" android:gravity="center_vertical" android:id="@id/tv_pup_mm" android:background="@drawable/shape_select_pup" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="陌陌" />
+        <LinearLayout android:background="#ffdfdbdb" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <TextView android:textColor="#ff515151" android:gravity="center_vertical" android:id="@id/tv_pup_qywx" android:background="@drawable/shape_select_pup" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="企业微信" />
+        <LinearLayout android:background="#ffdfdbdb" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <TextView android:textColor="#ff515151" android:gravity="center_vertical" android:id="@id/tv_pup_dd" android:background="@drawable/shape_select_pup" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="钉钉" />
+        <LinearLayout android:background="#ffdfdbdb" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <TextView android:textColor="#ff515151" android:gravity="center_vertical" android:id="@id/tv_pup_qq" android:background="@drawable/shape_select_pup" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="QQ" />
+        <LinearLayout android:background="#ffdfdbdb" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <TextView android:textColor="#ff515151" android:gravity="center_vertical" android:id="@id/tv_pup_ks" android:background="@drawable/shape_select_pup" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="快手" />
+        <LinearLayout android:background="#ffdfdbdb" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff515151" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="如果不能正常创建快捷方式，请手动到手机—设置界面—权限管理—找到本软件—创建桌面快捷方式权限-打开" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff515151" android:gravity="center" android:id="@id/tv_go_Permsion" android:background="@drawable/shape_select2" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:text="去开启权限" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff515151" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="本软件创建的快捷方式会带有“（虚拟）”标识，请注意辨识" />
+    </LinearLayout>
+</LinearLayout>

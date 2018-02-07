@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/LinTitle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center" android:background="@color/holo_blue_dark" android:layout_width="fill_parent" android:layout_height="35.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="#ff515151" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:text="虚拟定位" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <Button android:textSize="12.0sp" android:gravity="center" android:id="@id/search" android:background="@mipmap/search" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <Button android:id="@id/bt_mapVip" android:background="@mipmap/vipmap" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="75.0dip" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <Button android:id="@id/bt_shezhi" android:background="@mipmap/setting" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="12.0dip" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:background="@color/desktopColorA" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+            <EditText android:textSize="13.0sp" android:textColor="@color/colorAccent" android:textColorHint="@color/desktopColorA" android:layout_gravity="center_vertical" android:id="@id/et_jingdu" android:background="@drawable/shape_d" android:layout_width="wrap_content" android:layout_height="25.0dip" android:hint="请输入经度" android:digits="1234567890." android:layout_weight="1.0" />
+            <LinearLayout android:layout_width="3.0dip" android:layout_height="fill_parent" />
+            <EditText android:textSize="13.0sp" android:textColor="@color/colorAccent" android:textColorHint="@color/desktopColorA" android:layout_gravity="center_vertical" android:id="@id/et_weidu" android:background="@drawable/shape_d" android:layout_width="wrap_content" android:layout_height="25.0dip" android:hint="请输入纬度" android:digits="1234567890." android:layout_weight="1.0" />
+            <Button android:textSize="13.0sp" android:textColor="@color/colorAccent" android:layout_gravity="center_vertical" android:id="@id/bt_check_location" android:background="@drawable/shape_select3" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginLeft="3.0dip" android:text="查询坐标" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:id="@id/linMap" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.baidu.mapapi.map.MapView android:id="@id/map" android:layout_width="fill_parent" android:layout_height="320.0dip" />
+                    <Button android:textSize="12.0sp" android:textColor="@color/colorAccent" android:id="@id/bt_model" android:background="@drawable/shape_select2" android:layout_width="60.0dip" android:layout_height="27.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="卫星地图" android:layout_alignParentLeft="true" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/LinChange" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:gravity="center" android:id="@id/tv_text" android:background="@color/black_20_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="点击地图获得坐标" />
+                            <LinearLayout android:background="@color/desktopColorA" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                            <LinearLayout android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_marginTop="3.0dip">
+                                <LinearLayout android:layout_width="5.0dip" android:layout_height="fill_parent" />
+                                <TextView android:textColor="#ff25abae" android:gravity="center" android:id="@id/bt_save" android:background="@drawable/shape_select" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="收藏" android:layout_weight="1.0" />
+                                <LinearLayout android:layout_width="5.0dip" android:layout_height="fill_parent" />
+                                <LinearLayout android:id="@id/bt_change" android:background="@drawable/shape_select" android:layout_width="15.0dip" android:layout_height="35.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                                    <TextView android:textColor="#ff25abae" android:gravity="center" android:paddingLeft="13.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="前往" android:layout_weight="1.0" />
+                                    <ImageView android:layout_gravity="center" android:background="@mipmap/go" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="15.0dip" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:background="@color/desktopColorA" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                        <ListView android:id="@id/saveLIst" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="300.0dip" android:divider="#ffdcd8e7" android:dividerHeight="1.0dip" android:choiceMode="singleChoice" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/holo_blue_dark" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <ImageView android:id="@id/vipyaoqing_back" android:background="@mipmap/back" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff515151" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邀请" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <EditText android:textSize="13.0sp" android:textColor="@color/colorAccent" android:textColorHint="@color/desktopColorA" android:layout_gravity="center_vertical" android:id="@id/et_vipYaoqing" android:background="@drawable/shape_d" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:hint="请输入邀请码" />
+    <Button android:textColor="@color/colorAccent" android:layout_gravity="center" android:id="@id/bt_vipShengCheng" android:background="@drawable/shape_select2" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginTop="20.0dip" android:text="生成VIP" />
+</LinearLayout>
